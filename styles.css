@@ -1,21 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+body {
+  background-color: #242631;
+}
 
 h1 {
-        font-size: 32px;
-        color: #bd93f9;
-        text-align: center;
-        font-family: Inconsolata;
-        }
+  font-size: 32px;
+  color: #bd93f9;
+  text-align: center;
+  font-family: Inconsolata;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 32px;
+  color: lightgray;
+  text-align: center;
+  font-family: Inconsolata;
+  text-decoration: underline;
+}
 p {
-    text-align: center;
-    font-size: 24px;
-    font-family: Inconsolata;
-    color: lightgray;
-    }
+  text-align: center;
+  font-size: 24px;
+  font-family: Inconsolata;
+  color: white;
+}
+
+nav {
+  font-size: 18px;
+  font-family: Inconsolata;
+}
+div {
+  font-family: Inconsolata;
+}
+i {
+  font-size: 24px;
+  font-family: Inconsolata;
+}
+a {
+  text-decoration: none;
+  color: lightgray;
+  padding: 8px;
+}
+.aNoPadding {
+  text-decoration: none;
+  color: lightgray;
+}
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button {
+  background-color: #282a36;
+  border: 1px solid lightgray;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 25px 0px 25px 0px;
+  overflow: hidden;
+  background-color: #282a36;
+  top: 0;
+  width: 100%;
+  font-size: 32;
+  font-family: Inconsolata;
+}
+
+li {
+  float: left;
+  font-size: 24px;
+  display: inline;
+  font-family: Inconsolata;
+}
+
+li a:hover:not(.active) {
+  background-color: #242631;
+  color: #bd93f9;
+}
+
+.active {
+  background-color: #bd93f9;
+  color: white;
+}
+
+.active:hover {
+  background-color: #bd93f9;
+  color: white;
+}
