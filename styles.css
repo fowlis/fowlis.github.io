@@ -89,8 +89,18 @@ li {
   font-family: Inconsolata;
 }
 
+.liFloatRight{
+  float:right;
+  display: inline;
+  padding-right: 10px;
+}
+
 li a:hover:not(.active) {
   background-color: #242631;
+  color: #bd93f9;
+}
+
+.purpleHoverURL:hover {
   color: #bd93f9;
 }
 
@@ -102,31 +112,4 @@ li a:hover:not(.active) {
 .active:hover {
   background-color: #bd93f9;
   color: white;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
