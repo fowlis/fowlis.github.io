@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
-
 body {
   background-color: #242631;
 }
@@ -13,6 +12,7 @@ h1 {
   font-family: Inconsolata;
   text-decoration: underline;
 }
+
 h2 {
   font-size: 32px;
   color: lightgray;
@@ -20,6 +20,7 @@ h2 {
   font-family: Inconsolata;
   text-decoration: underline;
 }
+
 p {
   text-align: center;
   font-size: 24px;
@@ -31,18 +32,22 @@ nav {
   font-size: 18px;
   font-family: Inconsolata;
 }
+
 div {
   font-family: Inconsolata;
 }
+
 i {
   font-size: 24px;
   font-family: Inconsolata;
 }
+
 a {
   text-decoration: none;
   color: lightgray;
   padding: 24px;
 }
+
 .aNoPadding {
   text-decoration: none;
   color: lightgray;
@@ -89,8 +94,8 @@ li {
   font-family: Inconsolata;
 }
 
-.liFloatRight{
-  float:right;
+.liFloatRight {
+  float: right;
   display: inline;
   padding-right: 10px;
 }
@@ -112,4 +117,10 @@ li a:hover:not(.active) {
 .active:hover {
   background-color: #bd93f9;
   color: white;
+}
+
+.textLink {
+  color: #bd93f9;
+  text-decoration: underline;
+  padding: 0px;
 }
