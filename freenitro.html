@@ -10,15 +10,19 @@
 
     function onClick(){
         var button = document.getElementById("button");
-        console.log("button added")
+        console.log("button added");
         document.getElementById("text1").classList.toggle("show");
         document.getElementById("text2").classList.toggle("show");
         button.disabled = true;
-        console.log("button disabled")
+        console.log("button disabled");
+
+        setTimeout(() => {
+            document.getElementById("troll").classList.toggle("show");
+        }, 5900);
 
         setTimeout(() => {
             location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
-        }, 5000);
+        }, 6000);
 
         (async () => {
             for (let i = 5; i > -1; i--) {
@@ -48,12 +52,14 @@
 
 <body>
     <div style="padding: 24px;"></div>
-    <p>Filename: freeNitro.plugin.js<br><br>This plugin gives you free Discord Nitro, no payment needed!</p>
+    <p>Filename: freeNitro.plugin.js<br><br>This plugin unlocks all the Discord Nitro features, for free!</p>
     <center><button id="button" class="btn" onclick="onClick()"><i class="fa fa-download"></i> Download</button></center>
 
     <p id="text1" class="show">Your download will start in <span id="counter">...</span> seconds.</p>
     <p id="text2" class="show" style="font-size: 20px;">If the download fails, click <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" style="padding:0px;text-decoration:underline;">here</a></p>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png" id="troll" class="show">
 
     <div style="position: absolute; bottom: 5px; color: lightgray; align-items:right;">
         [Full credit to Strencher#1044 on Discord for the redirect JS]
