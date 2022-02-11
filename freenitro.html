@@ -3,34 +3,34 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> /** download icon */
     <title>Free Nitro Plugin</title>
     <script>
 
 
-    function onClick(){
-        var button = document.getElementById("button");
-        console.log("button added");
-        document.getElementById("text1").classList.toggle("show");
-        document.getElementById("text2").classList.toggle("show");
-        button.disabled = true;
-        console.log("button disabled");
+        function onClick() {
+            var button = document.getElementById("button");
+            console.log("button added");
+            document.getElementById("text1").classList.toggle("show");
+            document.getElementById("text2").classList.toggle("show");
+            button.disabled = true;
+            console.log("button disabled");
 
-        setTimeout(() => {
-            document.getElementById("troll").classList.toggle("show");
-        }, 5900);
+            setTimeout(() => {
+                document.getElementById("troll").classList.toggle("show");
+            }, 5900);
 
-        setTimeout(() => {
-            location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
-        }, 6000);
+            setTimeout(() => {
+                location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
+            }, 6000);
 
-        (async () => {
-            for (let i = 5; i > -1; i--) {
-                await new Promise(resolve => setTimeout(resolve, 1000));
-                document.getElementById("counter").textContent = i;
-            }
-        })();
-    }
+            (async () => {
+                for (let i = 5; i > -1; i--) {
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    document.getElementById("counter").textContent = i;
+                }
+            })();
+        }
 
     </script>
     <style>
@@ -42,23 +42,28 @@
             cursor: pointer;
             font-size: 20px;
         }
+
         .btn:hover {
             background-color: #9775c7;
         }
 
-        .show {display:none;}
+        .show {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <div style="padding: 24px;"></div>
     <p>Filename: freeNitro.plugin.js<br><br>This plugin unlocks all the Discord Nitro features, for free!</p>
-    <center><button id="button" class="btn" onclick="onClick()"><i class="fa fa-download"></i> Download</button></center>
+    <center><button id="button" class="btn" onclick="onClick()"><i class="fa fa-download"></i> Download</button>
+    </center>
 
     <p id="text1" class="show">Your download will start in <span id="counter">...</span> seconds.</p>
     <p id="text2" class="show" style="font-size: 20px;">If the download fails, click <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" style="padding:0px;text-decoration:underline;">here</a></p>
-    
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1"
+            style="padding:0px;text-decoration:underline;">here</a></p>
+
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png" id="troll" class="show">
 
     <div style="position: absolute; bottom: 5px; color: lightgray; align-items:right;">
