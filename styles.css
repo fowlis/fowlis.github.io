@@ -121,6 +121,12 @@ li a:hover:not(.active) {
   animation-fill-mode: forwards;
 }
 
+.purpleHoverURL:hover {
+  animation-name: buttonHoverColourChange;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
 @keyframes buttonHoverColourChange {
   100% {
     background-color: #242631;
@@ -128,16 +134,7 @@ li a:hover:not(.active) {
   }
 }
 
-.purpleHoverURL:hover {
-  color: #bd93f9;
-}
-
-.active {
-  background-color: #bd93f9;
-  color: white;
-}
-
-.active:hover {
+.active, .active:hover {
   background-color: #bd93f9;
   color: white;
 }
