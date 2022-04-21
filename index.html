@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/b214d16b30.js" crossorigin="anonymous"></script>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b214d16b30.js"
+      crossorigin="anonymous"
+    ></script>
     <title>fowlis | Home</title>
     <script>
-        function meow() {
-            // Get the snackbar DIV
-            var x = document.getElementById("snackbar");
+      function meow() {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
 
-            // Add the "show" class to DIV
-            x.className = "show";
+        // Add the "show" class to DIV
+        x.className = "show";
 
-            // After 3 seconds, remove the show class from DIV
-            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-        }
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <ul>
-        <li><a class="active" href="index.html" title="Home">Home</a></li>
-        <li><a href="aboutme.html" title="About Me">About Me</a></li>
-        <li><a href="projects.html" title="Projects">Projects</a></li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
-        <li class="liFloatRight"><a href="https://github.com/fowlis" target="_blank" title="My GitHub Profile"><i
-                    class="fab fa-github"></i></a>
+      <li><a class="active" href="index.html" title="Home">Home</a></li>
+      <li><a href="aboutme.html" title="About Me">About Me</a></li>
+      <li><a href="projects.html" title="Projects">Projects</a></li>
+      <li><a href="contact.html" title="Contact">Contact</a></li>
+      <li class="liFloatRight">
+        <a
+          href="https://github.com/fowlis"
+          target="_blank"
+          title="My GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
     </ul>
 
-    <div style="padding: 48px;"></div>
+    <div style="padding: 48px"></div>
     <h1>Welcome to my crap website :)</h1>
-    <p>Nothing much on this page. The other pages have more stuff on them!<br><br><button onclick="meow()">=＾● ⋏
-            ●＾=</button></p>
+    <p>
+      Nothing much on this page. The other pages have more stuff on them!<br /><br /><button
+        onclick="meow()"
+      >
+        =＾● ⋏ ●＾=
+      </button>
+    </p>
     <div id="snackbar">Meow!</div>
-</body>
-
+  </body>
 </html>
