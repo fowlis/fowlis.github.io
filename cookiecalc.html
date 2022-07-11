@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b214d16b30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="functions.js"></script>
+    <title>fowlis | CookieCalc</title>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li><a href="aboutme.html" title="About Me">About Me</a></li>
+      <li><a href="projects.html" title="Projects">Projects</a></li>
+      <li><a class="active" href="contact.html" title="Contact">Contact</a></li>
+      <li class="liFloatRight">
+        <a
+          href="https://github.com/fowlis"
+          target="_blank"
+          title="My GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+    </ul>
+
+    <div style="padding: 48px"></div>
+    <h3>Calculate how many cookies you will get in x amount of time</h3>
+    <p>Enter your Cookies per Second in FULL here (i.e. 170000000)</p>
+    <center>
+      <input type="number" id="cps" />
+    </center>
+    <p>Enter time</p>
+    <center><input type="number" id="time" />
+        <form name="timeFormat"><label for="format">Format: </label>
+        <input type="radio" name="format" value="seconds" checked="checked">Seconds</input>
+        <input type="radio" name="format" value="minutes" checked="checked">Minutes</input>
+        <input type="radio" name="format" value="hours" checked="checked">Hours</input>
+    </form>
+        <br /><br />
+      <button onclick="calculateAmountinTime()">Calculate!</button><br />
+    </center>
+    <p id="output1"></p>
+
+    <h3>Calculate how many minutes it will take to make x amount of cookies</h3>
+    <p>Enter your Cookies per Second in FULL here (i.e. 170000000)</p>
+    <center><input type="number" id="cps2" /><br /></center>
+    <p>Enter how many cookies you want here</p>
+    <center><input type="number" id="amount" /><br /><br />
+
+      <button onclick="calculateTimeforAmount()">Calculate!</button><br />
+    </center>
+    <p id="output2"></p>
+
+  </body>
+</html>
