@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #242631;
+  background-color: #282a36;
 }
 
 iframe {
@@ -306,9 +306,9 @@ select {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   padding-top: 16px;
+  background-color: #20212b;
 }
 
 /* Style sidebar links */
@@ -316,7 +316,7 @@ select {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: lightgray;
   display: block;
 }
 
