@@ -33,13 +33,42 @@
       <input type="number" id="cps" />
     </center>
     <p>Enter amount of time</p>
-    <center><input type="number" id="time" />
-        <form name="format"><label for="format">Format: </label>
-        <input type="radio" name="format" value="seconds" checked="checked">Seconds</input>
-        <input type="radio" name="format" value="minutes" checked="checked">Minutes</input>
-        <input type="radio" name="format" value="hours" checked="checked">Hours</input>
-    </form>
-        <br /><br />
+    <center>
+      <input type="number" id="time" />
+      <form name="format">
+        <label class="container" for="format">Format:</label>
+        <label>
+          <input
+            type="radio"
+            name="format"
+            id="radio1"
+            value="seconds"
+            checked="checked"
+          />
+          <p style="padding: 5px!important">- Seconds</p>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="format"
+            id="radio2"
+            value="minutes"
+            checked="checked"
+          />
+          <p style="padding: 5px!important">- Minutes</p>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="format"
+            id="radio3"
+            value="hours"
+            checked="checked"
+          />
+          <p style="padding: 5px!important">- Hours</p>
+        </label>
+      </form>
+      <br /><br />
       <button onclick="calculateAmountinTime()">Calculate!</button><br />
     </center>
     <p id="output1"></p>
@@ -48,11 +77,11 @@
     <p>Enter your Cookies per Second in FULL here (i.e. 170000000)</p>
     <center><input type="number" id="cps2" /><br /></center>
     <p>Enter how many cookies you want here</p>
-    <center><input type="number" id="amount" /><br /><br />
+    <center>
+      <input type="number" id="amount" /><br /><br />
 
       <button onclick="calculateTimeforAmount()">Calculate!</button><br />
     </center>
     <p id="output2"></p>
-
   </body>
 </html>

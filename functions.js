@@ -15,21 +15,23 @@ function calculateAmountinTime() {
   }
 
   console.log(formatvar);
-  timeformat = formatvar
+  timeformat = formatvar;
 
-  if ((timeformat == "seconds")) {
+  if (timeformat == "seconds") {
     document.getElementById("output1").innerHTML =
-      "You will make " + (z = y * x) + " cookies in " + y + " seconds!";
+      "You will make " + (z = x * y) + " cookies in " + y + " seconds!";
     console.log("1 run succ");
     return;
-  } else if ((timeformat == "minutes")) {
+  } else if (timeformat == "minutes") {
     document.getElementById("output1").innerHTML =
-      "You will make " + (z = y * 60 * x) + " cookies in " + y + " minutes!";
+      "You will make " + (z = x * 60 * y) + " cookies in " + y + " minutes!";
     console.log("2 run succ");
     return;
-  } else if ((timeformat == "hours")) {
+  } else if (timeformat == "hours") {
+    z = x * 60;
+    z = z * 60;
     document.getElementById("output1").innerHTML =
-      "You will make " + (z = y * 60 * 60 * x) + " cookies in " + y + " hours!";
+      "You will make " + z + " cookies in " + y + " hours!";
     console.log("3 run succ");
     return;
   }
