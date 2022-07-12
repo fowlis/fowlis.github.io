@@ -2,6 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/b214d16b30.js"
       crossorigin="anonymous"
@@ -11,66 +15,67 @@
   </head>
 
   <body>
-    <ul>
-      <li><a href="index.html" title="Home">Home</a></li>
-      <li><a href="aboutme.html" title="About Me">About Me</a></li>
-      <li><a href="projects.html" title="Projects">Projects</a></li>
-      <li><a class="active" href="contact.html" title="Contact">Contact</a></li>
-      <li class="liFloatRight">
-        <a
-          href="https://github.com/fowlis"
-          target="_blank"
-          title="My GitHub Profile"
-          ><i class="fab fa-github"></i
-        ></a>
-      </li>
-    </ul>
-
-    <div style="padding: 48px"></div>
+    <div class="sidebar">
+      <p style="font-size: 18px !important">fowlis.github.io</p>
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="aboutme.html"><i class="fa fa-fw fa-user"></i> About Me</a>
+      <a href="projects.html"><i class="fa fa-fw fa-wrench"></i> Projects</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="https://github.com/fowlis" target="_blank"
+        ><i class="fa fa-fw fa-github"></i> GitHub</a
+      >
+      <p class="sidebar-bottom">totally fake copyright text™</p>
+    </div>
+    <div style="padding: 10px"></div>
+    <h2>CookieCalc - basic calculator for cookie clicker</h2>
     <h3>Calculate how many cookies you will get in x amount of time</h3>
     <p>Enter your Cookies per Second in FULL here (i.e. 170000000)</p>
     <center>
       <input type="number" id="cps" />
     </center>
     <p>Enter amount of time</p>
-    <center>
-      <input type="number" id="time" />
-      <form name="format">
-        <label class="container" for="format">Format:</label>
-        <label>
-          <input
-            type="radio"
-            name="format"
-            id="radio1"
-            value="seconds"
-            checked="checked"
-          />
-          <p style="padding: 5px!important">- Seconds</p>
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="format"
-            id="radio2"
-            value="minutes"
-            checked="checked"
-          />
-          <p style="padding: 5px!important">- Minutes</p>
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="format"
-            id="radio3"
-            value="hours"
-            checked="checked"
-          />
-          <p style="padding: 5px!important">- Hours</p>
-        </label>
-      </form>
-      <br /><br />
-      <button onclick="calculateAmountinTime()">Calculate!</button><br />
-    </center>
+    <input type="number" id="time" />
+    <div style="text-align: center; width: 100%">
+      <div style="margin: 0 auto; width: 100px; text-align: left">
+        <form name="format">
+          <label class="container"
+            >Seconds
+            <input
+              type="radio"
+              name="format"
+              id="radio1"
+              value="seconds"
+              checked="checked"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Minutes
+            <input
+              type="radio"
+              name="format"
+              id="radio2"
+              value="minutes"
+              checked="checked"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Hours
+            <input
+              type="radio"
+              name="format"
+              id="radio3"
+              value="hours"
+              checked="checked"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <button onclick="calculateAmountinTime()">Calculate!</button><br />
     <p id="output1"></p>
 
     <h3>Calculate how many minutes it will take to make x amount of cookies</h3>
