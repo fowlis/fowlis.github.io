@@ -2,6 +2,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 
+:root {
+  --nicepurple: #bd93f9;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ iframe {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
   color: white;
   text-align: center;
   font-family: Inconsolata;
@@ -24,14 +28,14 @@ h1 {
 
 h2 {
   font-size: 32px;
-  color: #bd93f9;
+  color: var(--nicepurple);
   text-align: center;
   font-family: Inconsolata;
 }
 
 h3 {
   font-size: 24px;
-  color: #bd93f9;
+  color: var(--nicepurple);
   text-align: center;
   font-family: Inconsolata;
 }
@@ -132,17 +136,18 @@ li a:hover:not(.active) {
 @keyframes buttonHoverColourChange {
   100% {
     background-color: #242631;
-    color: #bd93f9;
+    color: var(--nicepurple);
   }
 }
 
-.active, .active:hover {
-  background-color: #bd93f9;
+.active,
+.active:hover {
+  background-color: var(--nicepurple);
   color: white;
 }
 
 .textLink {
-  color: #bd93f9;
+  color: var(--nicepurple);
   text-decoration: underline;
   padding: 0px;
 }
@@ -198,12 +203,12 @@ li a:hover:not(.active) {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: lightgray;
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #bd93f9;
+  background-color: var(--nicepurple);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -289,7 +294,7 @@ label {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-right:3%;
+  margin-right: 3%;
   place-content: center;
 }
 
@@ -302,13 +307,13 @@ select {
 .sidebar {
   height: 100%;
   width: 160px;
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
   padding-top: 16px;
   background-color: #20212b;
+  position:fixed;
 }
 
 /* Style sidebar links */
@@ -325,12 +330,12 @@ select {
   color: #f1f1f1;
 }
 
-.sidebar-bottom{
-  bottom:5px;
+.sidebar-bottom {
+  bottom: 5px;
   padding-left: 0px;
-  position:absolute;
+  position: absolute;
   text-align: center;
-  font-size: 14px
+  font-size: 14px;
 }
 
 /* Style the main content */
@@ -341,6 +346,10 @@ select {
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
