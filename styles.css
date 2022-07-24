@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
   color: var(--nicepurple);
   text-align: center;
   font-family: Inconsolata;
@@ -67,6 +67,10 @@ a {
   text-decoration: none;
   color: lightgray;
   padding: 24px;
+}
+
+code {
+  background-color: #14151b;
 }
 
 .aNoPadding {
@@ -109,9 +113,8 @@ ul {
 }
 
 li {
-  float: left;
+  text-align: left;
   font-size: 24px;
-  display: inline;
   font-family: Inconsolata;
 }
 

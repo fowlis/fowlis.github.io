@@ -12,13 +12,15 @@
         color: #8be9fd !important;
       }
       .aNoPadding {
-        padding: 0px!important;
+        padding: 0px !important;
+        text-decoration: underline;
       }
       h2 {
         text-decoration: underline;
       }
       .error {
         color: #d2042d;
+        padding: 0px !important;
       }
       .sidebar {
         width: 230px !important;
@@ -29,11 +31,11 @@
       }
       td:nth-child(even),
       th:nth-child(even) {
-        background-color: #640115
+        background-color: #640115;
       }
       td:nth-child(odd),
       th:nth-child(odd) {
-        background-color: #309649
+        background-color: #309649;
       }
       table {
         border-spacing: 25px;
@@ -55,29 +57,17 @@
         padding-left: 30px;
         padding-right: 40px;
       }
+      img {
+        max-width: 100%;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: auto;
+      }
     </style>
     <title>BetterDiscord Quickstart Guide</title>
   </head>
 
   <body>
-    <div id="top"></div>
-    <div class="sidebar">
-      <p style="font-size: 18px !important">BD Quickstart</p>
-      <a href="#top"
-        ><i class="fa-solid fa-rectangle-list"></i> Table of Contents</a
-      >
-      <a href="#install"><i class="fa-solid fa-download"></i> Installation</a>
-      <a href="#plugins"
-        ><i class="fa-solid fa-puzzle-piece"></i> Downloading Plugins</a
-      >
-      <a href="#themes"
-        ><i class="fa-solid fa-paintbrush"></i> Downloading Themes</a
-      >
-      <a href="#support"
-        ><i class="fa-solid fa-circle-question"></i> Getting Support</a
-      >
-    </div>
-    <div style="padding: 10px"></div>
+    <div id="top" style="padding: 10px"></div>
     <h1>BetterDiscord Quickstart Guide</h1>
 
     <p>
@@ -140,7 +130,7 @@
     </p>
     <p class="error">
       If you don't see the BetterDiscord section,
-      <a class="error" href="#support" class="aNoPadding">click here</a>.
+      <a class="error" href="#support">click here</a>.
     </p>
 
     <p>
@@ -184,7 +174,7 @@
       (It may open in the background, so check your taskbar)<br /><br />
       <img src="https://slug.feen.us/tac6sldjlc.png" /><br /><br />
       Next, drag and drop the PluginRepo plugin file from your Downloads to the
-      Plugin folder.<br /><br />
+      plugin folder.<br /><br />
       <img
         src="https://slug.feen.us/8v98b1c8bf.png"
         style="width: 66%"
@@ -235,7 +225,7 @@
       (It may open in the background, so check your taskbar)<br /><br />
       <img src="https://slug.feen.us/tgatvlemfd.png" /><br /><br />
       Next, drag and drop the ClearVision theme file from your Downloads to the
-      Plugin folder.<br /><br />
+      themes folder.<br /><br />
       <img src="https://slug.feen.us/9zn23gfq2f.png" width="66%" /><br /><br />
       Your Themes tab will now look like this:<br /><br />
       <img src="https://slug.feen.us/gnpnz4musd.png" width="50%" /><br /><br />
@@ -252,10 +242,9 @@
       different problems.<br . />
       Thankfully, there is a Discord support server,
       <a
-        href="https://discord.gg/0Tmfo5ZbORCRqbAd"
-        target="_blank"
+        href="#support-server"
         class="aNoPadding"
-        >click here to join!</a
+        >link here</a
       ><br /><br />
       For support and general assistance with BetterDiscord, go to the #support
       channel.<br />
@@ -285,10 +274,53 @@
               describing the problem first
             </td>
           </tr>
+          <tr>
           <td>Wait patiently for someone to help after posting your issue</td>
           <td>Repost your issue if you didn't get a response the first time</td>
+          </tr>
+          <td>Remember that the people giving support are REAL PEOPLE with REAL LIVES</td>
+          <td>Think that the support team are robots who only live to provide support 24/7</td>
         </table>
       </center>
+    </p>
+    <h2>Extra: Errors you may come across following this guide</h2>
+    <h3>While installing</h3>
+    <p>
+      Any errors you get while installing may look the same, but in fact are
+      different problems with different fixes<br />
+      for example, the following error is caused by using an outdated
+      installer:<br /><br />
+      <img src="https://slug.feen.us/8hj9fs59cv.png" width="30%" /><br /><br />
+      The simple fix for this error is to redownload the installer from
+      <a href="https://betterdiscord.app/" class="aNoPadding" target="_blank"
+        >https://betterdiscord.app/</a
+      >.<br /><br />
+      HOWEVER, another error such as this one, has a
+      <u>completely different</u> fix:<br /><br />
+      <img src="https://slug.feen.us/92k1f6tfsh.png" /><br /><br />
+      For any errors you come across, the first things you should try are:<br /><br />
+      1. Close and re-open the installer<br />
+      2. Delete and redownload the installer<br />
+      3. Restart your computer and try the installer again<br /><br />
+      These may not fix the issue, and if it doesn't, join the support server 
+      <a
+        href="#support-server"
+        class="aNoPadding"
+        >linked here</a
+      >.<br />Here you should <u>screenshot the error message</u> on the installer, or <u>copy &
+      paste it</u> into the #support channel.<br />
+      This will provide the community support members with enough details so that they can give you the correct fix.
+    </p>
+    <h2 id="support-server">Support Server</h3>
+      <p>
+      Here you will find the link to the BetterDiscord Support server<br />
+      <u>Please</u>, be respectful of the support members and be patient with the solutions they provide,<br />as depending on the issue it could have more complicated steps to follow.<br /><br />
+      Link: <a
+      href="https://discord.gg/0Tmfo5ZbORCRqbAd"
+      class="aNoPadding"
+      target="_blank"
+      >https://discord.gg/0Tmfo5ZbORCRqbAd</a
+    >
     </p>
     <div style="padding: 20px"></div>
   </body>
