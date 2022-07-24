@@ -12,6 +12,32 @@
     ></script>
     <script src="functions.js"></script>
     <title>fowlis | CookieCalc</title>
+    <style>
+      #snackbar {
+        visibility: hidden;
+        min-width: 50px;
+        margin-left: -25px;
+        background-color: #282a36;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 43.5%;
+        bottom: 30px;
+      }
+
+      #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      .error {
+        color: #d2042d !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -75,10 +101,12 @@
       </div>
     </div>
     <br /><br />
-    <button onclick="calculateAmountinTime()">Calculate!</button><br />
-    <p id="output1"></p>
+    <center>
+      <button onclick="calculateAmountinTime()">Calculate!</button><br />
+    </center>
+    <p class="" id="output1"></p>
 
-    <h3>Calculate how many minutes it will take to make x amount of cookies</h3>
+    <h3>Calculate how long it will take to make x amount of cookies</h3>
     <p>Enter your Cookies per Second in FULL here (i.e. 170000000)</p>
     <center><input type="number" id="cps2" /><br /></center>
     <p>Enter how many cookies you want here</p>
@@ -87,6 +115,7 @@
 
       <button onclick="calculateTimeforAmount()">Calculate!</button><br />
     </center>
-    <p id="output2"></p>
+    <p class="" style="padding: 20px" id="output2"></p>
+    <div style="color:#d2042d" id="snackbar">Please enter values in the boxes!</div>
   </body>
 </html>
