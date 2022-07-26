@@ -1,3 +1,21 @@
+function meow() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
+
+function clickCounter() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = "Clicks: " + clicks;
+}
+
 function calculateAmountinTime() {
   document.getElementById("output1").innerHTML = "";
   var x = document.getElementById("cps").value;
