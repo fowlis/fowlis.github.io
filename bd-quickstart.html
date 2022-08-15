@@ -6,6 +6,7 @@
       src="https://kit.fontawesome.com/b214d16b30.js"
       crossorigin="anonymous"
     ></script>
+    <script src="functions.js"></script>
     <style>
       a {
         text-decoration: underline;
@@ -62,11 +63,39 @@
         box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         height: auto;
       }
+
+      #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      } 
     </style>
     <title>BetterDiscord Quickstart Guide</title>
   </head>
 
   <body>
+    <script>
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+    </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div id="top" style="padding: 10px"></div>
     <h1>BetterDiscord Quickstart Guide</h1>
 
@@ -111,7 +140,7 @@
       unstable.<br /><br />
       Note: don't worry if not all three are available, just select the version
       you want to install to.<br /><br />
-      <img src="https://slug.feen.us/15ss1qpyto.png" /><br /><br />
+      <img src="https://slug.feen.us/fdscfh2csf.png" /><br /><br />
       BetterDiscord will then begin to install, which will only take a couple
       moments.<br />
       Then you should see this screen, telling you the install completed.<br /><br />
@@ -250,7 +279,7 @@
       channel.<br />
       For problems with plugins, go to #plugin-support.<br />
       For problems with themes, go to #theme-support.<br /><br />
-      If you're going to post an issue, here are some DOs and DON'Ts
+      <u>If you're going to post an issue, here are some DOs and DON'Ts</u>
       <center>
         <table>
           <tr>
@@ -291,25 +320,14 @@
       for example, the following error is caused by using an outdated
       installer:<br /><br />
       <img src="https://slug.feen.us/8hj9fs59cv.png" width="30%" /><br /><br />
-      The simple fix for this error is to redownload the installer from
+      The simple fix for this issue is to redownload the installer from
       <a href="https://betterdiscord.app/" class="aNoPadding" target="_blank"
         >https://betterdiscord.app/</a
-      >.<br /><br />
-      HOWEVER, another error such as this one, has a
-      <u>completely different</u> fix:<br /><br />
-      <img src="https://slug.feen.us/92k1f6tfsh.png" /><br /><br />
-      For any errors you come across, the first things you should try are:<br /><br />
-      1. Close and re-open the installer<br />
-      2. Delete and redownload the installer<br />
-      3. Restart your computer and try the installer again<br /><br />
-      These may not fix the issue, and if it doesn't, join the support server 
-      <a
-        href="#support-server"
-        class="aNoPadding"
-        >linked here</a
-      >.<br />Here you should <u>screenshot the error message</u> on the installer, or <u>copy &
-      paste it</u> into the #support channel.<br />
-      This will provide the community support members with enough details so that they can give you the correct fix.
+      >.</p>
+      <p class="error">If you got an error that looks different from the one above - the fix will (probably) be different.</p>
+      <p>
+      In this case I direct you to take a screenshot of the installer window <b>clearly showing the error message</b>, join the support server linked below,<br />
+      and post the screenshot in the <b>#support</b> channel.
     </p>
     <h2 id="support-server">Support Server</h3>
       <p>
