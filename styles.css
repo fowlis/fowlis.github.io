@@ -12,6 +12,8 @@ html {
 
 body {
   background-color: #282a36;
+  min-height: 100vh;
+  display: flex;
 }
 
 iframe {
@@ -317,6 +319,8 @@ select {
   padding-top: 16px;
   background-color: #20212b;
   position:fixed;
+  font-family: Inconsolata;
+  /*display: flex;*/
 }
 
 /* Style sidebar links */
@@ -345,10 +349,18 @@ select {
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
+  font-family: Inconsolata;
+}
+
+.content {
+  flex-grow: 1;
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
+@media only screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
   .sidebar {
     padding-top: 15px;
   }
