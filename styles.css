@@ -4,6 +4,7 @@
 
 :root {
   --nicepurple: #bd93f9;
+  --main-background: #282a36;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #282a36;
+  background-color: var(--main-background);
   min-height: 100vh;
   display: flex;
 }
@@ -354,6 +355,16 @@ select {
 
 .content {
   flex-grow: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-background);
+  color: white;
+  text-align: center;
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
