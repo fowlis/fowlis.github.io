@@ -357,16 +357,6 @@ select {
   flex-grow: 1;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--main-background);
-  color: white;
-  text-align: center;
-}
-
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media only screen and (max-width: 992px) {
   body {

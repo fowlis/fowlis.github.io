@@ -8,6 +8,8 @@
     ></script>
     <script src="functions.js"></script>
     <style>
+      body {display: inline!important;} /* need this or else it breaks*/
+
       a {
         text-decoration: underline;
         color: #8be9fd !important;
@@ -83,6 +85,16 @@
       #myBtn:hover {
         background-color: #555; /* Add a dark-grey background on hover */
       } 
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--main-background);
+        color: white;
+        text-align: center;
+      }
     </style>
     <title>BetterDiscord Quickstart Guide</title>
   </head>
