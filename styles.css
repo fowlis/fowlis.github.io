@@ -161,30 +161,19 @@ li a:hover:not(.active) {
 
 /* card crap */
 .card {
-  padding-top: 20px;
-  background-color: transparent;
-  width: 250px;
-  height: 420px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
+/* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container {
-  display: block;
-  position: relative;
-  padding-left: 0px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 20px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: right;
+/* Add some padding inside the card container */
+.cardContainer {
+  padding: 2px 16px;
 }
 
 /* Hide the browser's default radio button */
@@ -322,7 +311,6 @@ select {
   background-color: #20212b;
   position:fixed;
   font-family: Inconsolata;
-  /*display: flex;*/
 }
 
 /* Style sidebar links */
@@ -368,5 +356,25 @@ select {
   }
   .sidebar a {
     font-size: 18px;
+  }
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
 }
