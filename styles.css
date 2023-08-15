@@ -8,6 +8,34 @@
   --main-background-alt: #28283e;
 }
 
+.pageContainer {
+  display:flex;
+  flex-direction: row;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 16px;
+  background-color: #20212b;
+  font-family: Inconsolata;
+  position: fixed;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: lightgray;
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -299,29 +327,6 @@ select {
   margin-top: 10px;
 }
 
-/* Style the sidebar - fixed full height */
-.sidebar {
-  height: 100%;
-  width: 160px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 16px;
-  background-color: #20212b;
-  position:fixed;
-  font-family: Inconsolata;
-}
-
-/* Style sidebar links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: lightgray;
-  display: block;
-}
-
 /* Style links on mouse-over */
 .sidebar a:hover {
   color: #f1f1f1;
@@ -340,10 +345,6 @@ select {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
   font-family: Inconsolata;
-}
-
-.content {
-  flex-grow: 1;
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
