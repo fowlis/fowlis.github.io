@@ -8,7 +8,7 @@ quick links:
 <li><a href="https://fowlis.github.io/aboutme.html" target="_blank">about me</a></li>
 <li><a href="https://fowlis.github.io/projects.html" target="_blank">projects</a></li>
 <li><a href="https://fowlis.github.io/contact.html" target="_blank">contact</a></li>
-<li><a href="https://fowlis.github.io/bd-helpful-info.html">helpful info for bd helpfuls</a></li>
+<li><a href="https://fowlis.github.io/bd-helpful-info.html">useful info for bd helpfuls</a></li>
 </ul>
 
 
