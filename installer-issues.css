@@ -1,0 +1,82 @@
+:root {
+    --main-bg-colour: #0f1015;
+    --accent-color: #3a71c1;
+    --main-text: #f1f1f1;
+    --primary-accent: #20212b;
+    --secondary-accent: #101116;
+    --font: Open Sans;
+}
+
+body {
+    background-color: var(--secondary-accent);
+    font-family: var(--font);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    row-gap: 10px;
+    background-color: var(--secondary-accent);
+    padding: 10px;
+}
+
+.sub-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--secondary-accent);
+    align-content: center;
+    padding-right: 10px;
+}
+
+.sub-grid-container>div {
+    background-color: var(--primary-accent);
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+    color: var(--main-text);
+}
+
+.grid-container>div {
+    background-color: var(--primary-accent);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: var(--main-text);
+}
+
+summary {
+    text-align: center;
+}
+
+h1 {
+    color: var(--main-text);
+    font-family: var(--font);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+.smalltext {
+    font-size: 12px;
+}
+
+code {
+    background-color: var(--secondary-accent);
+}
+
+.desc {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.sub-grid-container>div>.desc {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.list {
+    text-align: left;
+    font-size: 26px;
+}

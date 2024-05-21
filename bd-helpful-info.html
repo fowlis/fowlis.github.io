@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="helpful-styles.css" />
+  <script src="https://kit.fontawesome.com/b214d16b30.js" crossorigin="anonymous"></script>
+  <title>Info for BD's Helpfuls</title>
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="#ins">Installer Issues</a>
+    <a href="#gen">General Issues</a>
+    <a href="#plg">Plugin-related</a>
+    <a href="#thm">Theme-related</a>
+    <a href="#oth">Other</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="main">
+    <div class="border">
+      <div style="padding: 1px;"></div>
+      <h1 id="ins">Installer Issues</h1>
+      <div class="grid-container">
+        <div>
+          <h4>Installer does not open</h4>
+          Solutions:
+          <ul>
+            <li>Redownload installer</li>
+            <li>7zip method:<ul>
+                <li>Install 7-Zip or similar software.</li>
+                <li>Right click the "BetterDiscord-windows.exe", from the 7-Zip options, click extract to
+                  "BetterDiscord-Windows\"</li>
+                <li>Open the new "BetterDiscord-Windows" folder and run the "BetterDiscord.exe"</li><img
+                  src="assets/7zipMethod.png" width="80%">
+              </ul>
+            <li><a href="https://docs.betterdiscord.app/users/getting-started/installation#manual-installation"
+                target="_blank">Manual install</a></li>
+          </ul>
+          Related issue: "Error opening file for writing"<br />
+          Press "Ignore" several times, or try the above solutions.
+          <img src="assets/errorOpeningWriting.png" width="60%">
+        </div>
+        <div>
+          <h4>Discord missing in installer / BD settings missing after install</h4>
+          The user should reinstall Discord just by installing it again. If this doesn't work, they should be prompted
+          to
+          <i>fully</i> reinstall Discord.<br />
+          <a href="https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors"
+            target="_blank">Windows guide</a><br />
+          <a href="https://support.discord.com/hc/en-us/articles/360022082931--macOS-Install-and-Updating-Errors"
+            target="_blank">MacOS guide</a><br />
+          For BD settings missing, make sure the user actually installs BD again after reinstalling Discord.<br /><br />
+          <u>Linux users:</u><br />
+          BD not appearing in the installer usually means that the user has not installed Discord the normal way via
+          discord.com<br />
+          The user should use <a href="https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172"
+            target="_blank">BetterDiscordCTL</a>, as this supports Appstore/Flatpak/Snap/whatever installs.<br />
+          <br />
+          <br />
+          <img src="assets/discordNotFound.png" width="80%">
+        </div>
+        <div>
+          <h4>"Cannot read property 'assets' of undefined"</h4>
+          User should redownload the installer, the version they are using is extremely old.
+        </div>
+        <div>
+          <h4>Windows only - EPERM: operation not permitted, <b>open</b></h4>
+          <img src="assets/winOperationNotPermitted.png" width="65%"><br />
+          The installer does not have the correct permissions for installing, can be resolved with a complete reinstall
+          of Discord.<br />
+          <a href="https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors"
+            target="_blank">Guide</a>
+        </div>
+        <div>
+          <h4>MacOS only - EPERM: operation not permitted, <b>mkdir</b></h4>
+          <img src="assets/macOperationNotPermitted.png" width="65%"><br />
+          The installer does not have the correct permissions for installing, grant the installer full disk access<br />
+          <a href="https://www.howtoisolve.com/full-disk-access-full-permissions-on-mac/#How-do-I-grant-an-app-to-the-full-disk"
+            target="_blank">Guide</a>
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+      </div> <!-- End of grid container -->
+      <h1 id="gen">General Issues</h1>
+      <div class="grid-container">
+        <div>
+          <h4>BetterDiscord disappearing after Discord/PC restart</h4>
+          Stable - prompt the user to do a <a
+            href="https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors"
+            target="_blank">full
+            reinstall of Discord</a>, as their client is probably corrupted in some way and is forcing updates on every
+          restart.<br />
+          PTB/Canary - explain to the user that they should either move to Stable, or deal with it. These clients
+          receive
+          updates much more often than Stable and as such the issue will be more prevalent.<br />
+          A solution to this is apparently in the works for BD, but nothing yet.<br /><br />
+          You can also offer <a href="https://gist.github.com/Knewest/ee59d3960e18e6d813c9221b54b36ab1"
+            target="_blank">Knew's quick reinstall scripts</a> to make the process of reinstalling BD easier and
+          quicker.
+        </div>
+        <div>
+          <h4>User's installed addons not showing in addon tabs</h4>
+          There are a couple possible causes for this:
+          <ul>
+            <li>File shows as "download.html". The user has a download manager, and it is downloading the wrong file.
+              Prompt the user to disable/remove
+              their download manager for the file to download correctly.</li>
+            <li>The filename looks almost correct, such as "ZeresPluginLibrary plugin.js". Instruct the user to add the
+              missing "." between the addon's name and the "plugin"/"theme" in the filename.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Addons giving errors immediately upon loading them</h4>
+          <ul>
+            <li>"META not found". Ask the user to either screenshot the contents of the file, or send the file. Check
+              that
+              the file actually contains the appropriate code for the addon. Redownloading the file should fix it, but
+              you
+              can also direct the user to copy-paste the proper code into the file in case redownloading doesn't work.
+            </li>
+            <li>Most other errors should be reported directly to the developer of the addon, you can either link their
+              GitHub issues or direct the user to the author's support server if they have one.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>BD logo flashing in bottom corner of games (PTB/Canary)</h4>
+          Prompt user to disable in-game overlay, or enable legacy overlay.<br />
+          This should be fixed in the next update of BD.
+        </div>
+        <div>
+          <h4>Window snapping broken with BD</h4>
+          Caused by transparency and is a known bug with Electron. Not a BD issue to fix.
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+      </div> <!-- End of grid container -->
+      <h1 id="plg">Plugin-related</h1>
+      <div class="grid-container">
+        <div>
+          <h4>Plugins breaking after a Discord/BD update</h4>
+          There is nothing we can do specifically to help the user, unless the issue is crashing or causing the user to
+          not be able to disable their plugin(s).<br />
+          If the user is experiencing crashing immediately after starting Discord as a result of a Discord/BD update,
+          instruct them to do a Repair with the BD installer.<br />
+          If the user knows what plugin is causing their issue, they should report it directly to the developer.<br />
+          If the user <i>does not</i> know which plugin is causing their issue, we cannot help them much other than
+          instruct them to do a binary search of their plugins folder to find the cause.<br />Then once they find the
+          affected plugin(s), they can report the issue to the dev(s).
+        </div>
+        <div>
+          <h4>General issues with plugins</h4>
+          Again, we cannot help the user much if they know which plugin is causing the issue.<br />
+          It may be possible to accurately identify what type of plugin could be causing it, i.e. an issue with the
+          members tab could be caused by a plugin that interacts with it, such as MemberCount.<br />
+          Knowledge like this could help the user find the afflicted plugin.
+        </div>
+        <div>
+          <h4>Plugins folder location</h4>
+          Some issues may cause the user to not be able to access their settings to open the plugins folder, so you can
+          instruct them to open it manually.
+          <ul>
+            <li>Windows<ul>
+                <li>Press <code>Win</code> + <code>R</code> and paste in <code>%appdata%/betterdiscord/plugins</code>
+                </li>
+              </ul>
+            </li>
+            <li>MacOS<ul>
+                <li>Go to Finder, press <code>Cmd</code> + <code>Shift</code> + <code>G</code> and paste in
+                  <code>~/Library/Application Support/betterdiscord/plugins</code>
+                </li>
+              </ul>
+            </li>
+            <li>Linux<ul>
+                <li>Open terminal and paste in <code>cd ~/.config/BetterDiscord/plugins</code>, then
+                  <code>xdg-open .</code>
+                </li>
+              </ul>
+          </ul>
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+      </div> <!-- End of grid container -->
+      <h1 id="thm">Theme-related</h1>
+      <div class="grid-container">
+        <div>
+          <h4>Theme breaks to the point of making it impossible to disable it</h4>
+          Doing a repair with the installer will disable all addons, so the user can remove the broken theme.
+        </div>
+        <div>
+          <h4>Theme has broken elements, or is broken in general</h4>
+          The user should report this directly to the dev of the theme(s), if not done so already.<br />
+          If there is a solution available that the dev has not merged, feel free to offer it to the user.
+        </div>
+        <div>
+          <h4>Themes folder location</h4>
+          Some issues may cause the user to not be able to access their settings to open the themes folder, so you can
+          instruct them to open it manually.
+          <ul>
+            <li>Windows<ul>
+                <li>Press <code>Win</code> + <code>R</code> and paste in <code>%appdata%/betterdiscord/themes</code>
+                </li>
+              </ul>
+            </li>
+            <li>MacOS<ul>
+                <li>Go to Finder, press <code>Cmd</code> + <code>Shift</code> + <code>G</code> and paste in
+                  <code>~/Library/Application Support/betterdiscord/themes</code>
+                </li>
+              </ul>
+            </li>
+            <li>Linux<ul>
+                <li>Open terminal and paste in <code>cd ~/.config/BetterDiscord/themes</code>, then
+                  <code>xdg-open .</code>
+                </li>
+              </ul>
+          </ul>
+          It may be necessary to guide the user to the custom.css file in some cases, here are the paths to that:
+          <ul>
+            <li>Windows: <code>%appdata%/betterdiscord/data/stable/custom.css</code></li>
+            <li>MacOS: <code>~/Library/Application Support/betterdiscord/data/stable/custom.css</code></li>
+            <li>Windows: <code>~/.config/BetterDiscord/data/stable/custom.css</code></li>
+          </ul>
+          These paths assume the user is on the Stable client, so if they are on PTB/Canary they should replace "stable"
+          in those paths with their respective client name.
+        </div>
+        <div>
+          <h4>CSS class updater</h4>
+          <a href="https://syndishanx.github.io/Website/Update_Classes.html" target="_blank">https://syndishanx.github.io/Website/Update_Classes.html</a><br />
+          Users can utilise this when snippets they use have stopped working.<br />
+          Doesn't work well on themes that import most of their codebase, the user would be better off waiting for the theme's dev to update the theme.
+        </div>
+      </div>
+      <h1 id="oth">Other info</h1>
+      <div class="grid-container">
+        <div>
+          <h4>Experiments</h4>
+          This is an unwritten rule in the server - we cannot offer users instructions to enable Discord's experiments.
+        </div>
+        <div>
+          <h4>BD docs quick links</h4>
+          <a href="https://docs.betterdiscord.app/users/getting-started/installation" target="_blank">Install
+            instructions</a><br />
+          <a href="https://docs.betterdiscord.app/plugins/introduction/guidelines" target="blank">Plugin
+            guidelines</a><br />
+          <a href="https://docs.betterdiscord.app/themes/introduction/guidelines" target="blank">Theme
+            guidelines</a><br />
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+        <div>
+          <h4>Will add more if necessary</h4>
+          placeholder text
+        </div>
+      </div> <!-- End of grid container -->
+    </div>
+  </div>
+</body>
+
+</html>

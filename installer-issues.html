@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="installer-issues.css"
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<head>
+<title>BD - Common Installer Issues</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Common Installer Issues</h1>
+    </center>
+
+    <div class="grid-container">
+        <div>
+            <details>
+                <summary>Installer doesn't open</summary>
+                <br />
+                <div class="sub-grid-container">
+                    <div>
+                        <center>
+                            <b>Installer doesn't open at all</b>
+                            <p class="desc">a. Do a manual installation > <a
+                                    href="https://docs.betterdiscord.app/users/getting-started/installation#manual-installation"
+                                    target="_blank" rel="noopener noreferrer">guide</a>
+                                <br /> b. Try the 7-Zip method:
+                            <ol class="list">
+                                <li>Install <a href="https://7-zip.org/">7-Zip</a> or similar software.</li>
+                                <li>Right click the BetterDiscord-windows.exe, from the 7-Zip options, click "extract to
+                                    'BetterDiscord-Windows\'"</li>
+                                <li>Open the new BetterDiscord-Windows folder and run the BetterDiscord.exe</li>
+                            </ol>
+                            <br /><img src="assets/7zipmethod.png" width="60%" />
+                            </p>
+                        </center>
+                    </div>
+                    <div>
+                        <center>
+                            <b>"Error opening file for writing"</b><br /><br /><img src="assets/errorOpeningWriting.png"
+                                width="50%" /></summary>
+                            <p class="desc">a. Click "ignore" several times (genuinely, like 20-30 times)
+                                <br />b. Do a manual installation > <a
+                                    href="https://docs.betterdiscord.app/users/getting-started/installation#manual-installation"
+                                    target="_blank" rel="noopener noreferrer">guide</a>
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>No Discord versions to select</summary>
+                <br />
+                <img src="assets/discordnotfound.png" width="30%" />
+                <div class="sub-grid-container">
+                    <div style="text-align: center;"><b>Windows users:</b>
+                        <ol class="list">
+                        <li>Unpin the Discord icon from your taskbar (if it's pinned)</li>
+                        <li>Quit or Uninstall Discord</li>
+                        <li>Reinstall Discord from <a href="https://discord.com/" target="_blank"
+                            rel="noopener noreferrer">the Discord site</a></li>
+                        <li>Try the installer again</li>
+                    </ol>
+                    </div>
+                    <div style="text-align: center;"><b>Linux users:</b>
+                        <p class="desc">The BD installer only detects Discord versions installed via<br />the .deb/.tar.gz from
+                            <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">the Discord
+                                site</a><br />For AppStore/Flatpak/Snap versions, use <a
+                                href="https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172"
+                                target="_blank" rel="noopener noreferrer">betterdiscordctl</a>
+                        </p>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+        <div>
+            <details>
+                <summary>Cannot read property 'assets' of undefined</summary>
+                <p><img src="assets/assetsofundefined.png" width="30%" />
+                    <br />You are using a <i>very</i> outdated installer - please redownload from <a
+                        href="https://betterdiscord.app" target="_blank" rel="noopener noreferrer">the BetterDiscord
+                        site</a>
+                </p>
+                <br />
+                <p class="smalltext">(this was an issue from over 3 years ago, it was fixed within days)</p>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>[Windows] EPERM: operation not permitted, <b>open</b></summary>
+                <br />
+                <img src="assets/winOperationNotPermitted.png" width="30%" />
+                <br />The installer does not have the correct permissions for installing, can be resolved with a complete reinstall of Discord<br />
+                <a href="https://support.discord.com/hc/en-us/articles/209099387"
+                    target="_blank" rel="noopener noreferrer">Guide</a>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>[MacOS] EPERM: operation not permitted, <b>mkdir</b></summary>
+                <br />
+                <img src="assets/macOperationNotPermitted.png" width="30%" />
+                <br />The installer does not have the correct permissions for installing, grant the installer full disk
+                access<br />
+                <a href="https://www.howtoisolve.com/full-disk-access-full-permissions-on-mac/#How_To_Grant_Full_Disk_Access_On_Mac"
+                    target="_blank" rel="noopener noreferrer">Guide</a>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>title</summary>
+                <p>desc</p>
+            </details>
+        </div>
+    </div>
+
+</body>
+
+</html>
