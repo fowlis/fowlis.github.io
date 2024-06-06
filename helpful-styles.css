@@ -85,3 +85,8 @@ code {
   background-color: var(--bg3);
   padding: 10px;
 }
+
+button {
+  background-color: var(--bg2);
+  border-radius: 5px;
+}

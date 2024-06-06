@@ -8,6 +8,14 @@
 </head>
 
 <body>
+
+  <script>
+    function copyKnewsUrl() {
+      navigator.clipboard.writeText
+        ("https://gist.github.com/ObserverOfTime/d7e60eb9aa7fe837545c8cb77cf31172");
+    }
+  </script>
+
   <div class="sidenav">
     <a href="#ins">Installer Issues</a>
     <a href="#gen">General Issues</a>
@@ -98,7 +106,7 @@
           updates much more often than Stable and as such the issue will be more prevalent.<br />
           A solution to this is apparently in the works for BD, but nothing yet.<br /><br />
           You can also offer <a href="https://gist.github.com/Knewest/ee59d3960e18e6d813c9221b54b36ab1"
-            target="_blank">Knew's quick reinstall scripts</a> to make the process of reinstalling BD easier and
+            target="_blank">Knew's quick reinstall scripts</a> <button onclick="copyKnewsUrl()">Copy URL</button> to make the process of reinstalling BD easier and
           quicker.
         </div>
         <div>
@@ -239,9 +247,11 @@
         </div>
         <div>
           <h4>CSS class updater</h4>
-          <a href="https://syndishanx.github.io/Website/Update_Classes.html" target="_blank">https://syndishanx.github.io/Website/Update_Classes.html</a><br />
+          <a href="https://syndishanx.github.io/Website/Update_Classes.html"
+            target="_blank">https://syndishanx.github.io/Website/Update_Classes.html</a><br />
           Users can utilise this when snippets they use have stopped working.<br />
-          Doesn't work well on themes that import most of their codebase, the user would be better off waiting for the theme's dev to update the theme.
+          Doesn't work well on themes that import most of their codebase, the user would be better off waiting for the
+          theme's dev to update the theme.
         </div>
       </div>
       <h1 id="oth">Other info</h1>
