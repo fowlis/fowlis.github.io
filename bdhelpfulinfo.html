@@ -106,7 +106,8 @@
           updates much more often than Stable and as such the issue will be more prevalent.<br />
           A solution to this is apparently in the works for BD, but nothing yet.<br /><br />
           You can also offer <a href="https://gist.github.com/Knewest/ee59d3960e18e6d813c9221b54b36ab1"
-            target="_blank">Knew's quick reinstall scripts</a> <button onclick="copyKnewsUrl()">Copy URL</button> to make the process of reinstalling BD easier and
+            target="_blank">Knew's quick reinstall scripts</a> <button onclick="copyKnewsUrl()">Copy URL</button> to
+          make the process of reinstalling BD easier and
           quicker.
         </div>
         <div>
@@ -207,7 +208,21 @@
       <div class="grid-container">
         <div>
           <h4>Theme breaks to the point of making it impossible to disable it</h4>
-          Doing a repair with the installer will disable all addons, so the user can remove the broken theme.
+          Doing a repair with the installer will disable all addons, so the user can remove the broken theme.<br />
+          Alternatively, you can instruct them to use this snippet:<br />
+          <code class="codeblock">
+            BdApi.Themes.getAll().forEach((theme) => BdApi.Themes.disable(theme));
+            document.getElementById("customcss").innerHTML = "";
+          </code>
+          <figure>
+            <figcaption>Your code title</figcaption>
+            <pre>
+              <code>
+                BdApi.Themes.getAll().forEach((theme) => BdApi.Themes.disable(theme));
+                document.getElementById("customcss").innerHTML = "";
+              </code>
+            </pre>
+          </figure>
         </div>
         <div>
           <h4>Theme has broken elements, or is broken in general</h4>

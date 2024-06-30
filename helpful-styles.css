@@ -90,3 +90,8 @@ button {
   background-color: var(--bg2);
   border-radius: 5px;
 }
+
+.codeblock {
+  white-space: pre-wrap;
+  font-family: Consolas;
+}
